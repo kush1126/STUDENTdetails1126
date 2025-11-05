@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/admin.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Portal</h1>
+    <div id="login-panel">
+      <form id="login-form" class="panel">
+        <label>Username<input name="username" value="admin" required /></label>
+        <label>Password<input type="password" name="password" value="admin123" required /></label>
+        <button type="submit">Login</button>
+        <p id="login-message" class="message"></p>
+      </form>
+    </div>
+    <div id="admin-panel" class="hidden">
+      <div class="panel">
+        <h2>Export Section Summary</h2>
+        <div class="row">
+          <label>Class
+            <select id="admin-class">
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+              <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+              <option>11</option><option>12</option>
+            </select>
+          </label>
+          <label>Section
+            <select id="admin-section">
+              <option value="">Select</option>
+              <option>A</option><option>B</option><option>C</option><option>D</option>
+            </select>
+          </label>
+        </div>
+        <button id="export-section">Download Section Excel</button>
+      </div>
+
+      <div class="panel">
+        <h2>Export Personal Data</h2>
+        <p>Optionally filter by class and section.</p>
+        <div class="row">
+          <label>Class
+            <select id="pd-class">
+              <option value="">All</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+              <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+              <option>11</option><option>12</option>
+            </select>
+          </label>
+          <label>Section
+            <select id="pd-section">
+              <option value="">All</option>
+              <option>A</option><option>B</option><option>C</option><option>D</option>
+            </select>
+          </label>
+        </div>
+        <button id="export-personal">Download Personal Excel</button>
+        <button id="logout">Logout</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+

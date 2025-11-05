@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Details</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Details Form</h1>
+    <form id="student-form">
+      <div class="grid">
+        <label>Name<input name="name" required /></label>
+        <label>Roll Number<input name="rollNumber" required /></label>
+        <label>Aadhaar Number<input name="aadhaarNumber" minlength="12" maxlength="12" required /></label>
+        <label>Class
+          <select name="class" required>
+            <option value="">Select</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+            <option>11</option><option>12</option>
+          </select>
+        </label>
+        <label>Section
+          <select name="section" required>
+            <option value="">Select</option>
+            <option>A</option><option>B</option><option>C</option><option>D</option>
+          </select>
+        </label>
+        <label>Mother's Name<input name="motherName" required /></label>
+        <label>Father's Name<input name="fatherName" required /></label>
+        <label>Blood Group
+          <select name="bloodGroup" required>
+            <option value="">Select</option>
+            <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+            <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+          </select>
+        </label>
+        <label>State
+          <select id="state" name="state" required></select>
+        </label>
+        <label>District
+          <select id="district" name="district" required></select>
+        </label>
+        <div class="full"><h2>Bank Details</h2></div>
+        <label>Account Holder Name<input name="bankAccountName" required /></label>
+        <label>Account Number<input name="bankAccountNumber" required /></label>
+        <label>IFSC<input name="ifsc" required /></label>
+        <label>Bank Name<input name="bankName" required /></label>
+      </div>
+      <button type="submit">Submit</button>
+      <p id="message" class="message"></p>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
